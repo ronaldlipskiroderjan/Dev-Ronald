@@ -3,93 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Backend | [Seu Nome]</title>
+    <title>Ronald Lipski Roderjan | Portfólio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">&lt;DevBackend/&gt;</div>
+        <div class="logo">&lt;Ronald Lipski Roderjan/&gt;</div>
         <ul class="nav-links">
-            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#formacao">Formação</a></li>
+            <li><a href="#skills">Habilidades</a></li>
             <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
 
-    <header class="hero">
+    <header id="home" class="hero">
         <div class="hero-content hidden">
-            <h1 class="gradient-text">Olá, eu sou [Seu Nome]</h1>
-            <p>Desenvolvedor Backend especialista em transformar problemas complexos em código Java eficiente.</p>
-            <div class="hero-btns">
-                <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-                <a href="LINK_DO_GITHUB" target="_blank" class="btn btn-secondary">GitHub</a>
+            <h1 class="gradient-text">Ronald Lipski Roderjan</h1>
+            <h2 style="color: var(--text-secondary); margin-bottom: 20px;">Estudante de Engenharia de Software</h2>
+            
+            <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
+                Em busca de oportunidade de <strong>estágio em TI</strong> para aplicar meus conhecimentos em desenvolvimento e análise de dados.
+            </p>
+            
+            <div class="hero-btns" style="margin-top: 40px;">
+                <a href="#formacao" class="btn btn-primary">Ver Formação</a>
+                <a href="https://www.linkedin.com/in/ronald-lipski-roderjan-352476368" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
     </header>
 
     <main class="container">
-        <section id="sobre" class="section hidden">
-            <h2 class="section-title">Sobre & Tech Stack</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        Meu foco não é apenas fazer o código funcionar, mas construir arquiteturas que aguentem o tranco. 
-                        Sou apaixonado pelo ecossistema **Spring** e por modelagem de **banco de dados**.
-                        Atualmente, estou focado em desafios de escalabilidade e sistemas **SaaS Multi-tenant**.
-                    </p>
+        
+        <section id="formacao" class="section hidden">
+            <h2 class="section-title">Formação Acadêmica</h2>
+            <div class="project-card" style="border-left: 5px solid var(--accent);">
+                <div class="card-header">
+                    <h3>🎓 Pontifícia Universidade Católica do Paraná (PUCPR)</h3>
+                    <span class="badge">Cursando 3º Período</span>
                 </div>
-                <div class="skills-container">
-                    <span class="skill-chip"><i class="fab fa-java"></i> Java 17</span>
-                    <span class="skill-chip"><i class="fas fa-leaf"></i> Spring Boot</span>
-                    <span class="skill-chip"><i class="fas fa-database"></i> PostgreSQL</span>
-                    <span class="skill-chip"><i class="fas fa-server"></i> API REST</span>
-                    <span class="skill-chip"><i class="fab fa-docker"></i> Docker</span>
-                    <span class="skill-chip"><i class="fab fa-git-alt"></i> Git</span>
+                <p class="card-desc">
+                    Bacharelado em <strong>Engenharia de Software</strong>. <br>
+                    Previsão de conclusão: 2º semestre de 2029.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="section hidden">
+            <h2 class="section-title">Conhecimentos & Cursos</h2>
+            
+            <div class="about-grid">
+                <div>
+                    <h3 style="margin-bottom: 20px; color: var(--accent);">Hard Skills</h3>
+                    <div class="skills-container">
+                        <span class="skill-chip"><i class="fab fa-java"></i> Java (Orientado a Objetos)</span>
+                        <span class="skill-chip"><i class="fab fa-python"></i> Python</span>
+                        <span class="skill-chip"><i class="fas fa-database"></i> SQL & MySQL</span>
+                        <span class="skill-chip"><i class="fab fa-js"></i> JavaScript, HTML & CSS</span>
+                        <span class="skill-chip"><i class="fas fa-table"></i> Excel Avançado</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 style="margin-bottom: 20px; color: var(--accent);">Cursos Extras</h3>
+                    <ul class="tech-list" style="display: block;">
+                        <li style="margin-bottom: 10px; background: transparent; padding: 0; color: var(--text-secondary);">
+                            ✅ <strong>Maratona Java Virado no Jiraya</strong>
+                        </li>
+                        <li style="margin-bottom: 10px; background: transparent; padding: 0; color: var(--text-secondary);">
+                            ✅ <strong>Desenvolvimento Web</strong> & Raciocínio Algorítmico
+                        </li>
+                        <li style="margin-bottom: 10px; background: transparent; padding: 0; color: var(--text-secondary);">
+                            ✅ <strong>Arquitetura de Banco de Dados</strong>
+                        </li>
+                        <li style="margin-bottom: 10px; background: transparent; padding: 0; color: var(--text-secondary);">
+                            🇺🇸 <strong>Inglês Intermediário</strong> (Cultura Inglesa)
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section id="projetos" class="section">
-            <h2 class="section-title hidden">Projetos em Destaque</h2>
+            <h2 class="section-title hidden">Portfólio Acadêmico</h2>
             <div class="projects-grid">
                 
                 <div class="project-card hidden">
                     <div class="card-header">
-                        <h3>📅 Agendai (SaaS)</h3>
-                        <span class="badge">Em Destaque</span>
+                        <h3>📅 Projeto Agendai</h3>
+                        <span class="badge">Em Desenvolvimento</span>
                     </div>
                     <p class="card-desc">
-                        Backend robusto para uma plataforma de agendamento **Multi-tenant**. 
-                        O desafio principal foi garantir o isolamento total dos dados entre diferentes clientes empresariais usando uma única instância da aplicação e banco de dados.
+                        Projeto prático de estudo focado em Java e Spring Boot. Estou desenvolvendo um sistema de agendamento para aplicar conceitos de POO, Banco de Dados e APIs.
                     </p>
                     <ul class="tech-list">
                         <li>Java</li>
-                        <li>Spring Security</li>
-                        <li>PostgreSQL</li>
-                        <li>Arquitetura SaaS</li>
-                    </ul>
-                    <div class="card-links">
-                        <a href="LINK_DO_REPOSITORIO" target="_blank" class="btn-small">Ver no GitHub <i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card hidden">
-                    <div class="card-header">
-                        <h3>🛒 API de E-commerce</h3>
-                    </div>
-                    <p class="card-desc">
-                        API RESTful completa para gerenciamento de pedidos, estoque e clientes. Implementação de autenticação via JWT, documentação com Swagger e testes unitários com JUnit.
-                    </p>
-                    <ul class="tech-list">
                         <li>Spring Boot</li>
-                        <li>MySQL</li>
-                        <li>JWT</li>
-                        <li>JUnit</li>
+                        <li>PostgreSQL</li>
                     </ul>
                     <div class="card-links">
-                        <a href="#" target="_blank" class="btn-small">Ver no GitHub <i class="fab fa-github"></i></a>
+                        <a href="LINK_DO_REPOSITORIO_SE_TIVER" target="_blank" class="btn-small">Ver Código <i class="fab fa-github"></i></a>
                     </div>
                 </div>
 
@@ -97,14 +112,12 @@
         </section>
     </main>
 
-    <footer id="contato" class="footer hidden">
-        <h2>Vamos conversar?</h2>
-        <p>Estou sempre aberto a discutir novas oportunidades e desafios técnicos.</p>
-        <div class="social-links">
-            <a href="LINK_DO_LINKEDIN" target="_blank">LinkedIn <i class="fab fa-linkedin"></i></a>
-            <a href="mailto:SEU_EMAIL">Email <i class="fas fa-envelope"></i></a>
+    <footer class="footer hidden" style="padding: 40px;">
+        <p class="copyright">© 2026 Ronald Lipski Roderjan.</p>
+        <div class="social-links" style="margin-top: 20px;">
+            <a href="mailto:ronaldlipskil@gmail.com">ronaldlipskil@gmail.com <i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/5541999945293">(41) 99994-5293 <i class="fab fa-whatsapp"></i></a>
         </div>
-        <p class="copyright">© 2026 Desenvolvido por [Seu Nome].</p>
     </footer>
 
     <script src="script.js"></script>
