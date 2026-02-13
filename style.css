@@ -1,10 +1,10 @@
 /* --- Variáveis de Cor (Paleta Moderna) --- */
 :root {
-    --bg-main: #0f172a;      /* Fundo principal escuro */
-    --bg-secondary: #1e293b; /* Fundo dos cards */
-    --text-primary: #f8fafc; /* Texto claro */
-    --text-secondary: #94a3b8; /* Texto secundário */
-    --accent: #8b5cf6;       /* Cor de destaque (Roxo moderno) */
+    --bg-main: #0f172a;
+    --bg-secondary: #1e293b;
+    --text-primary: #f8fafc; 
+    --text-secondary: #94a3b8; 
+    --accent: #8b5cf6;       
     --accent-hover: #a78bfa;
 }
 
@@ -21,7 +21,7 @@ body {
     background-color: var(--bg-main);
     color: var(--text-primary);
     line-height: 1.6;
-    overflow-x: hidden; /* Evita barra de rolagem horizontal indesejada */
+    overflow-x: hidden;
 }
 
 /* --- Utilitários --- */
@@ -250,12 +250,11 @@ body {
 }
 .social-links a:hover { color: var(--accent); }
 
-/* --- CSS NECESSÁRIO PARA A ANIMAÇÃO JS --- */
-/* Estado inicial: invisível e deslocado para baixo */
+
 .hidden {
     opacity: 0;
-    transform: translateY(50px); /* Move 50px para baixo */
-    transition: all 0.8s ease-out; /* Define a suavidade da animação */
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
 }
 
 /* Estado final: visível e na posição original */
@@ -269,15 +268,15 @@ body {
     .hero h1 { font-size: 2.5rem; }
     .about-grid { grid-template-columns: 1fr; }
     .navbar { padding: 20px; }
-    .nav-links { display: none; } /* Simplificação para mobile */
+    .nav-links { display: none; }
 }
 
 .banner-principal {
     background-image: url('caminho/para/seu-banner.jpg');
-    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-size: cover;
     background-position: center;
     width: 100%;
-    height: 300px; /* Altura do banner */
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
