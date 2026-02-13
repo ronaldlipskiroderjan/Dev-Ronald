@@ -313,18 +313,18 @@ body {
 
 @media (max-width: 768px) {
     
-    /* Ajuste do Menu: Barra fixa no fundo (Estilo App) */
+    /* Ajuste do Menu: Barra fixa no fundo */
     .navbar {
         top: auto;
         bottom: 0;
-        padding: 15px 0;
+        padding: 12px 0; /* Mais fino */
         justify-content: center;
-        background: rgba(15, 23, 42, 0.95);
+        background: rgba(15, 23, 42, 0.98); /* Quase sólido para leitura */
         border-top: 1px solid rgba(255,255,255,0.1);
         border-bottom: none;
     }
 
-    .logo { display: none; /* Esconde logo no mobile para dar espaço aos ícones */ }
+    .logo { display: none; }
 
     .nav-links {
         width: 100%;
@@ -335,69 +335,90 @@ body {
     }
 
     .nav-links a {
-        font-size: 0.9rem;
+        font-size: 0.85rem; /* Fonte menu menor */
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5px;
+        gap: 4px;
     }
 
-    /* Hero Section no Mobile */
+    /* --- CORREÇÃO DO TÍTULO (HERO) --- */
     .hero {
-        padding-top: 60px; /* Menos espaço em cima */
-        min-height: auto; /* Altura automática */
-        padding-bottom: 60px;
+        padding-top: 40px; 
+        padding-bottom: 100px; /* Espaço extra embaixo pro menu não cobrir */
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-content {
+        width: 100%; /* Garante que usa a largura toda */
+        padding: 0 15px;
     }
 
     .hero h1 {
-        font-size: 2.2rem; /* Fonte menor */
+        /* O Pulo do Gato: Fonte dinâmica que nunca estoura */
+        font-size: clamp(1.8rem, 8vw, 2.5rem); 
+        line-height: 1.1; /* Linhas mais próximas */
+        margin-bottom: 10px;
+        word-wrap: break-word; /* Evita cortar palavras */
+    }
+
+    .hero h2 {
+        font-size: 1rem; /* Subtítulo mais delicado */
+        margin-bottom: 20px;
+        line-height: 1.4;
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        padding: 0 10px; /* Margem interna para texto não colar na borda */
+        line-height: 1.5;
     }
 
-    /* Botões empilhados no mobile */
+    /* Botões empilhados e mais largos */
     .hero-btns {
         flex-direction: column;
         width: 100%;
+        gap: 15px;
+        padding: 0 20px; /* Margem de respiro */
     }
 
     .btn {
         width: 100%;
         justify-content: center;
+        padding: 14px 0; /* Botão mais alto para toque */
     }
 
-    /* Transformando colunas em linhas */
-    .about-grid {
-        grid-template-columns: 1fr; /* Uma coluna só */
-        gap: 30px;
-    }
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* Ajustes finos */
-    .container {
-        padding: 20px; /* Menos padding lateral */
-    }
-
+    /* --- Títulos das Seções --- */
     .section-title {
-        font-size: 1.8rem;
-        text-align: left; /* Títulos alinhados à esquerda no mobile fica mais moderno */
+        font-size: 1.6rem;
+        text-align: center; /* Centralizado fica melhor no mobile */
     }
     
     .section-title::after {
-        margin: 10px 0 0; /* Ajuste da linha abaixo do título */
+        margin: 10px auto 0; /* Centraliza a linha decorativa */
+    }
+
+    /* Cards e Grids */
+    .container {
+        padding: 30px 20px;
+    }
+
+    .about-grid, .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 
     .card-header {
         flex-direction: column;
         align-items: flex-start;
+        gap: 8px;
     }
     
     .badge {
-        margin-top: 5px;
+        font-size: 0.7rem;
+        align-self: flex-start; /* Alinha badge à esquerda */
     }
 }
